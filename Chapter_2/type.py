@@ -10,3 +10,5 @@ print(type(z))  # Output: <class 'float'>
 
 t = True
 print(type(t))  # Output: <class 'bool'>
+
+
