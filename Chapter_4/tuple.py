@@ -38,3 +38,23 @@ print(f"Name: {name}, Age: {age}, Country: {country}")
 # - When your data should not be changed
 # - Tuples are slightly faster than lists
 # - Useful for fixed data like coordinates, days of week etc.
+
+# 🔹 CRUD Operations Concept with Tuple
+# Note: Tuples are immutable, so we cannot perform actual Update or Delete like in lists
+# But we can simulate it by converting to a list and back to tuple
+
+# Simulated Update
+numbers_list = list(numbers)
+numbers_list[0] = 100  # Update
+numbers = tuple(numbers_list)
+print(f"Updated tuple: {numbers}")
+
+# Simulated Delete
+numbers_list = list(numbers)
+del numbers_list[1]  # Delete element at index 1
+numbers = tuple(numbers_list)
+print(f"Tuple after deletion: {numbers}")
+
+# Add (Create new tuple with added value)
+numbers = numbers + (999,)  # Append new element
+print(f"Tuple after adding new element: {numbers}")
